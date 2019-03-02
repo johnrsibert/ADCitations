@@ -18,8 +18,8 @@ Three citation sources were used:
 
 The ADMB on-line publication list is not in a convenient format for automatic processing. The complete list of citations from the ADMB site was copied and pasted into [FreeCite](http://freecite.library.brown.edu/) and downloaded in BibTeX format. The BibTeX file was processed with `sed` to create a second BibTeX file with consistent journal titles. An `awk` script plus a bit of manual editing produced a matrix of citations by journal name and year (`oldADMB_citation_matrix.csv`).
 
-The two Web of Science `.csv` files were first processed by libreoffice to change the field delimiter from ',' to '|' and processed by an `awk` script to produce citation matrices.(ADMB_citation_matrix.csv and 
-`TMB_citation_matrix.csv`).
+The two Web of Science `.csv` files were first processed by libreoffice to change the field delimiter from ',' to '|' without merging delimiters and processed by an `awk` script to produce citation matrices. (`ADMB_citation_matrix.csv`
+and `TMB_citation_matrix.csv`).
 
 The three citation matrixes above were summed by an `awk` script to create a complete citation matrix spanning the period 1990 through 2017.
 
