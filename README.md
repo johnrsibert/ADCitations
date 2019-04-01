@@ -26,10 +26,10 @@ The three citation matrixes above were summed by an `awk` script to create a com
 #### Results
 
 The figure below shows trends in citations per year with the ADMB website list shown in red, citations of Fournier et al (2012) in green, citations of Kristensen et al (2016) in blue, and total citations in black. There are no noticable upticks in number of citations per year corresponding to open-source release dates. Rather, the publication of definitive references seems to be the most important simulus to number of citations per year.
-![Citations per Year](./graphics/cpy.png)
+![Citations per Year](./cpy.png)
 
 The problem of determining whether the number of citations of a method has expanded into more fields is superficially similar to problems faced by ecologists to express changes in species diversity in different areas and times. The figure below shows the trend in "publication diversity" as measured by the [Shannon Weaver diversity index](https://en.wikipedia.org/wiki/Diversity_index#Shannon_index). It shows a relatively continuous increase from 1990 to 2010 followed by a sharp increase after 2012.
-![Shanon Weaver Diversity Index (H))](./graphics/H.png)
+![Shanon Weaver Diversity Index (H))](./H.png)
 
 #### Conclusions to date
 
