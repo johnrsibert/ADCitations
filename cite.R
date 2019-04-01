@@ -135,11 +135,12 @@ cite.bib=function()
    cat("}\n",file=bib,append=TRUE)
 
 
-#  print(csv)
+   total_citations = 0
    for (f in 1:2)
    {
       tmp=read.csv(file=csv[f],sep="|",skip=3)
       ncite = nrow(tmp)
+      total_citations = total_citations + ncite
       print(paste(ncite,"citations in ",csv[f]))
 
       srt = tmp[order(tmp$Publication.Year),]
@@ -169,11 +170,6 @@ cite.bib=function()
          cat("}\n",file=bib,append=TRUE)
       }
    }
+   print(paste("Found ",total_citations," citations"))
 }
 
-
-#     cat.string=function(s)
-#     {
-#        cat(paste(s,"\n",sep=""),file=dfile,append=TRUE)
-#     }
- 
