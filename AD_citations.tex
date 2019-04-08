@@ -1,17 +1,25 @@
 \documentclass[12pt,letterpaper]{article}
-\usepackage{natbib} %biblatex-chicago}
-\begin{document}
-\bibliographystyle{chicago}
+%\usepackage[backend=biber]{biblatex}
+\usepackage[style=authoryear]{biblatex}
+\addbibresource{AD_citations.bib}
 
-Citations of~\citet{ADMB0} and~\citet{TMB0} gleaned from Web of
-Science in March 2019. This list is over 100 pages in length and
+\begin{document}
+
+%Citations of~\citet{ADMB0} and~\citet{TMB0} gleaned from Web of
+%Science in March 2019. 
+This list is over 100 pages in length and
 contains about 970 citations, 100 of
 TMB and 860 of ADMB. It is presented in alphabetical order and there
 are some duplicates, probably caused by both articles cited in the
 same paper. 
 
-
 \nocite{*}
 
-\bibliography{AD_citations}
+\clearpage\printbibliography[title=All AD Citations]
+\clearpage\printbibliography[keyword=2019,title=Publication Year 2019]
+\clearpage\printbibliography[keyword=2018,title=Publication Year 2018]
+\clearpage\printbibliography[keyword=2017,title=Publication Year 2017]
+\clearpage\printbibliography[keyword=2016,title=Publication Year 2016]
+\clearpage\printbibliography[keyword=2015,title=Publication Year 2015]
+
 \end{document}
